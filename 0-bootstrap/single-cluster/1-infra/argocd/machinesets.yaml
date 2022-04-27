@@ -18,16 +18,16 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "${INFRASTRUCTURE_ID}"
+          infrastructureId: "itzocp-662001rtxj-p2u-l7qs6"
           # cloudProvider.name set to aws, azure, ibmcloud or vsphere
           # cloudProvider.managed set to true for ROSA, ARO, ROKS
           cloudProvider:
-            name: "${PLATFORM}" 
-            managed: ${MANAGED}
+            name: "azure" 
+            managed: false
           # only for "aws", "ibmcloud" or "azure" maybe "gcp"
           cloud:
-            region: ${REGION}
-            image: ${IMAGE_NAME}
+            region: eastus
+            image: rhcos-48.84.202109241901-0-azure.x86_64.vhd
           # only for "vsphere" - ignored for other
           vsphere:
             networkName: ${VS_NETWORK}
