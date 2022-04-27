@@ -17,7 +17,7 @@ resources:
 #- argocd/namespace-knative-eventing.yaml
 #- argocd/namespace-knative-serving.yaml
 #- argocd/namespace-knative-serving-ingress.yaml
-# - argocd/namespace-openshift-storage.yaml
+ - argocd/namespace-openshift-storage.yaml
 #- argocd/namespace-spp.yaml
 #- argocd/namespace-spp-velero.yaml
 #- argocd/namespace-baas.yaml
@@ -28,9 +28,9 @@ resources:
 - argocd/serviceaccounts-db2.yaml
 - argocd/serviceaccounts-mq.yaml
 #- argocd/scc-wkc-iis.yaml
-# - argocd/storage.yaml
-# - argocd/infraconfig.yaml
-# - argocd/machinesets.yaml
+ - argocd/storage.yaml
+ - argocd/infraconfig.yaml
+ - argocd/machinesets.yaml
 patches:
 - target:
     group: argoproj.io
