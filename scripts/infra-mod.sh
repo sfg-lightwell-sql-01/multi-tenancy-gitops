@@ -141,7 +141,7 @@ defsc=$(oc get sc | grep default | awk '{print $1}')
 if [[ "$platform" == "aws" ]]; then
     storageClass=${defsc:-"gp2"}
     elif [[ "$platform" == "azure" ]]; then
-    storageClass=${defsc:-"managed-premium"}
+    storageClass=${defsc:-"ocs-storagecluster-cephfsium"}
     elif [[ "$platform" == "gcp" ]]; then
     storageClass=${defsc:-"standard"}
     elif [[ "$platform" == "ibmcloud" ]]; then

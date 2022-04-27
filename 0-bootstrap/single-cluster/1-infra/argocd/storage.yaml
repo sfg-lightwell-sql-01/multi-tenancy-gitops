@@ -20,7 +20,7 @@ spec:
         odf-operator:
           channel: stable-4.8
           sizeGiB: 512
-          storageClass: managed-premium
+          storageClass: ocs-storagecluster-cephfsium
           argo:
             namespace: openshift-gitops
             serviceAccount: openshift-gitops-cntk-argocd-application-controller
